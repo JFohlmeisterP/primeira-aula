@@ -9,3 +9,14 @@ C:\dev2\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfoInputs.c
 C:\dev2\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfo.cs
 C:\dev2\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.dll
 C:\dev2\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.pdb
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.exe
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.deps.json
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.runtimeconfig.json
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.runtimeconfig.dev.json
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.dll
+C:\fohlmeister\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.pdb
+C:\fohlmeister\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.csprojAssemblyReference.cache
+C:\fohlmeister\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfoInputs.cache
+C:\fohlmeister\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfo.cs
+C:\fohlmeister\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.dll
+C:\fohlmeister\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.pdb

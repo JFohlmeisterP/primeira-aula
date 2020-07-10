@@ -6,19 +6,33 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            var myText = "meu texto";
-            var myNumber = 7;
-            var myPrice = 4.099;
-            var myBoolean = myPrice == myNumber;
+            // const string myText = "exemplo";
 
-            Console.WriteLine("Você é maior de idade");
-            var result = Console.ReadLine();
+            // var currentDate = DateTime.Now;
 
-            myBoolean = result == "sim";
+            // var price = 4.099;
 
-            Console.WriteLine(myText);
-            Console.WriteLine(myBoolean);
-            Console.WriteLine(myBoolean);
-        }
-    }
+           Console.WriteLine("Qual a sua idade?");
+
+           var result = Console.ReadLine();
+
+
+           int userAge = Int32.Parse(result);
+
+            if (userAge > 15 && userAge < 51) 
+           {
+                Console.WriteLine ("Sim, você tem idade para o Entra21!");
+           }
+        //    else if (userAge == 14 || userAge == 15)
+        //    {
+        //        Console.WriteLine ("Você não tem idade para o Entra21, mas pode ser menor aprendiz!");
+        //    }
+           else
+           {
+               Console.WriteLine ("Você não tem idade para o Entra21!");
+           }
+           
+        Console.WriteLine ("Só isso e mais nada!");
+       }
+   }
 }

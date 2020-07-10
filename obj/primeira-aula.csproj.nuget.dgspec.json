@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev2\\primeira-aula\\primeira-aula.csproj": {}
+    "C:\\fohlmeister\\primeira-aula\\primeira-aula.csproj": {}
   },
   "projects": {
-    "C:\\dev2\\primeira-aula\\primeira-aula.csproj": {
+    "C:\\fohlmeister\\primeira-aula\\primeira-aula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev2\\primeira-aula\\primeira-aula.csproj",
+        "projectUniqueName": "C:\\fohlmeister\\primeira-aula\\primeira-aula.csproj",
         "projectName": "primeira-aula",
-        "projectPath": "C:\\dev2\\primeira-aula\\primeira-aula.csproj",
+        "projectPath": "C:\\fohlmeister\\primeira-aula\\primeira-aula.csproj",
         "packagesPath": "C:\\Users\\entra21\\.nuget\\packages\\",
-        "outputPath": "C:\\dev2\\primeira-aula\\obj\\",
+        "outputPath": "C:\\fohlmeister\\primeira-aula\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\entra21\\AppData\\Roaming\\NuGet\\NuGet.Config",
