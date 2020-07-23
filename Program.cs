@@ -6,6 +6,11 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
+        }
+
+         static void Exercise1(string[] args)
+        {
+            // teste executado
             int i;
             
             System.Console.WriteLine("Ordem crescente:");
@@ -15,7 +20,7 @@ namespace primeira_aula
             }
 
             System.Console.WriteLine("Ordem decrescente:");
-            for (i = 10; i <= 1; i--)
+            for (i = 10; i >= 1; i--)
             {
                 System.Console.WriteLine($"{i}");
             }
@@ -28,19 +33,36 @@ namespace primeira_aula
             }
         }
 
-         static void Exercise1(string[] args)
-        {
-        }
-
          static void Exercise2(string[] args)
         {
+            // teste executado
+            int soma = 0;
+            int i = 0;
+
+            for (i = 0; i <= 100; i++)
+            {
+                soma = soma + i;
+            }
+
+            System.Console.WriteLine($"A soma de todos os inteiros de 1 a 100 é: {soma}");
         }
 
          static void Exercise3(string[] args)
         {
+           // teste executado
+           int i = 0;
+
+            for (i = 0; i <= 200; i++) 
+            {
+                if (i % 2 == 1)
+                {
+                    System.Console.WriteLine($"{i}");
+                }
+            }
         }
         static void Exercise4(string[] args)
         {
+            // teste executado
             double sum = 0.0;
             double counter = 0.0;
         
@@ -65,6 +87,7 @@ namespace primeira_aula
         }
         static void Exercise5(string[] args)
         {
+            // encontrar condição de parada
             string[] name = new string[5];
             int[] age = new int[5];
             int i;
@@ -85,6 +108,7 @@ namespace primeira_aula
 
         static void Exercise6(string[] args)
         {
+            // terminar
             System.Console.WriteLine("1- Cadastrar candidato");
             System.Console.WriteLine("2- Votar");
             System.Console.WriteLine("3- Candidato vencedor");
@@ -109,7 +133,7 @@ namespace primeira_aula
     
         static void Exercise7(string[] args)
         {
-
+            // terminar
             System.Console.WriteLine("Há quantos anos a pessoa é fumante?");
             var anos = Console.ReadLine();
             Int32.Parse(anos);
@@ -126,6 +150,7 @@ namespace primeira_aula
 
          static void Exercise8(string[] args)
         {
+            // teste executado
             System.Console.WriteLine("Informe o valor de X:");
             var x = Convert.ToInt32(System.Console.ReadLine());
 
@@ -147,6 +172,7 @@ namespace primeira_aula
         
          static void Exercise9(string[] args)
         {
+            // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
             var a = Convert.ToDouble(System.Console.ReadLine());
             System.Console.WriteLine("Informe o segundo número:");
@@ -166,6 +192,7 @@ namespace primeira_aula
 
             static void Exercise10(string[] args)
         {
+            // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
             var a = Convert.ToDouble(System.Console.ReadLine());
             System.Console.WriteLine("Informe o segundo número:");
@@ -187,6 +214,7 @@ namespace primeira_aula
 
         static void Exercise11(string[] args)
         {
+            // teste executado
             int quociente = 0;
             
             System.Console.WriteLine("Informe o primeiro número:");
@@ -217,6 +245,7 @@ namespace primeira_aula
 
         static void Exercise14(string[] args)
         {
+            // terminar
             System.Console.WriteLine("Informe o primeiro número:");
             var a = Convert.ToInt32(System.Console.ReadLine());
             System.Console.WriteLine("Informe o segundo número:");
@@ -227,6 +256,7 @@ namespace primeira_aula
 
         static void Exercise15(string[] args)
         {
+            // teste executado
             int i;
             var counter1 = 0;
             var counter2 = 0;
@@ -254,6 +284,7 @@ namespace primeira_aula
 
          static void Exercise16(string[] args)
             {
+                // teste executado
                 double salarioliquido = 0;
                 
                 System.Console.WriteLine("Informe o salário bruto:");
@@ -277,6 +308,7 @@ namespace primeira_aula
 
         static void Exercise17(string[] args)
         {
+            // teste executado
             int i;
             int result;
 
@@ -292,6 +324,7 @@ namespace primeira_aula
 
         static void Exercise18(string[] args)
         {
+            // teste executado
             double price = 0;
             double total = 0;
             
