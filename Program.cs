@@ -87,65 +87,101 @@ namespace primeira_aula
         }
         static void Exercise5(string[] args)
         {
-            // encontrar condição de parada
+            // teste executado
             string[] name = new string[5];
             int[] age = new int[5];
             int i;
+            int counter = 0;
+            double percentual;
             
             for (i = 0; i < 5; i++)
             {
                 System.Console.WriteLine("Informe o nome:");
                 name[i] = System.Console.ReadLine();
-                
-                for (i = 0; i < 1 ; i++)
+                System.Console.WriteLine("Informe a idade:");
+                age[i] = Convert.ToInt32(System.Console.ReadLine());
+
+                if (age[i] >= 18 && age[i] <= 35)
                 {
-                    System.Console.WriteLine("Informe o nome:");
-                    age[i] = Convert.ToInt32(System.Console.ReadLine());
+                    counter++;
                 }
             }
+
+            percentual = (counter * 100) / 5;
+            System.Console.WriteLine($"O percentual de mulheres entre 18 e 35 anos é de: {percentual}%");
 
         }
 
         static void Exercise6(string[] args)
         {
-            // terminar
-            System.Console.WriteLine("1- Cadastrar candidato");
-            System.Console.WriteLine("2- Votar");
-            System.Console.WriteLine("3- Candidato vencedor");
-            System.Console.WriteLine("Digite o modo escolhido:");
-            var modo = Console.ReadLine();
+            // teste executado
+            string[] nomes = new string[2];
+            int counter1 = 0;
+            int counter2 = 0;
+            int i;
 
-            switch(modo)
+            System.Console.WriteLine("Informe a senha para cadastrar os candidatos:");
+             var senha = System.Console.ReadLine();
+
+            if (senha == "Pa$$w0rd")
             {
-                case "1":
-                Int32.Parse(modo);
-                System.Console.WriteLine("Digite");
-                break;
-
-                case "2":
-                break;
-
-                case "3":
-                break;
-
+                for (i = 0; i < 2; i++)
+                {
+                    System.Console.WriteLine("Informe o nome do candidato:");
+                    nomes[i] = System.Console.ReadLine();
+                }
             }
+
+            System.Console.WriteLine("Para votar, informe o número do candidato:");
+            System.Console.WriteLine($"[1]{nomes[0]}  [2]{nomes[1]}");
+            var voto = System.Console.ReadLine();
+
+            if (voto == "1")
+            {
+                counter1++;
+            }
+            else if (voto == "2")
+            {
+                counter2++;
+            }
+            else
+            {
+                System.Console.WriteLine("Número inválido");
+            }
+
+            if (counter1 > counter2)
+            {
+                System.Console.WriteLine($"O candidato líder de votos é {nomes[0]}");
+            }
+            else
+            {
+                System.Console.WriteLine($"O candidato líder de votos é {nomes[1]}");
+            }
+
         }
     
         static void Exercise7(string[] args)
         {
-            // terminar
+            // teste executado
+            double valorUn;
+            double gasto;
+            
             System.Console.WriteLine("Há quantos anos a pessoa é fumante?");
-            var anos = Console.ReadLine();
-            Int32.Parse(anos);
+            var anos = Int32.Parse(Console.ReadLine());
 
             System.Console.WriteLine("Quantos cigarros o fumante fuma por dia?");
-            var cigarros = Console.ReadLine();
-            Int32.Parse(cigarros);
+            var cigarrosDia = Int32.Parse(Console.ReadLine());
 
             System.Console.WriteLine("Qual o valor da carteira de cigarros consumida pelo fumante?");
-            var valorCarteira = Console.ReadLine();
-            Int32.Parse(valorCarteira);
+            var valorCarteira = Convert.ToDouble(System.Console.ReadLine());
 
+            System.Console.WriteLine("Qual a quantidade de cigarros por carteira?");
+            var cigarrosCarteira = Convert.ToDouble(System.Console.ReadLine());
+
+            valorUn = valorCarteira / cigarrosCarteira;
+            gasto = ((anos * 365) * cigarrosDia) * valorUn;
+
+            System.Console.WriteLine($"O gasto total do fumante até agora foi de R${gasto.ToString("0.00")}");
         }
 
          static void Exercise8(string[] args)
@@ -235,23 +271,96 @@ namespace primeira_aula
 
         static void Exercise12(string[] args)
         {
-            // faltou info na questão.
+            // teste executado
+            int[] num = new int[4];
+            int i = 0;
+            int soma = 0;
+
+            for (i = 0; i < 4; i++)
+            {
+                System.Console.WriteLine("Informe um número:");
+                num[i] = Convert.ToInt32(System.Console.ReadLine());
+
+                if (num[i] % 2 == 0)
+                {
+                    soma = soma + num[i];
+                }
+            }
+
+            System.Console.WriteLine($"A soma dos números pares é: {soma}");
         }
+
 
         static void Exercise13(string[] args)
         {
-            // pulei
+            // teste executado
+            int maior = 0;
+            int[] num = new int[10];
+            int i = 0;
+
+            for (i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine("Informe um número:");
+                num[i] = Convert.ToInt32(System.Console.ReadLine());
+
+                if (num[i] > maior)
+                {
+                    maior = num[i];
+                }
+            }
+            
+            System.Console.WriteLine($"O maior número é {maior}.");
+
         }
 
         static void Exercise14(string[] args)
         {
-            // terminar
+            // teste executado
+            int[] num = new int[3];
+
             System.Console.WriteLine("Informe o primeiro número:");
-            var a = Convert.ToInt32(System.Console.ReadLine());
+            num[0] = Convert.ToInt32(System.Console.ReadLine());
             System.Console.WriteLine("Informe o segundo número:");
-            var b = Convert.ToInt32(System.Console.ReadLine());
+            num[1] = Convert.ToInt32(System.Console.ReadLine());
             System.Console.WriteLine("Informe o terceiro número:");
-            var c = Convert.ToInt32(System.Console.ReadLine());
+            num[2] = Convert.ToInt32(System.Console.ReadLine());
+
+            if (num[0] > num[1])
+            {
+                if (num[1] > num[2])
+                {
+                    System.Console.WriteLine($"{num[2]} {num[1]} {num[0]}");
+                }
+                else
+                {
+                    if (num[0] > num[2])
+                    {
+                        System.Console.WriteLine($"{num[1]} {num[2]} {num[0]}");
+                    }
+                    else
+                    {
+                        System.Console.WriteLine($"{num[1]} {num[0]} {num[2]}");
+                    }
+                }
+            }
+            else if (num[1] > num[2])
+            {
+            
+                if (num[0] > num[2])
+                {
+                    System.Console.WriteLine($"{num[2]} {num[0]} {num[1]}");
+                }
+                else
+                {
+                    System.Console.WriteLine($"{num[0]} {num[2]} {num[1]}");
+                }
+                
+            }
+            else 
+            {
+                System.Console.WriteLine($"{num[0]} {num[1]} {num[2]}");
+            }
+
         }
 
         static void Exercise15(string[] args)
