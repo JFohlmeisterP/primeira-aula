@@ -7,7 +7,28 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            
+            // pesquisar comparação
+            int[] a = new int[10];
+            int[] b = new int[10];
+            var i = 0;
+
+            for (i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro para A:");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+                System.Console.WriteLine("Informe um número inteiro para B:");
+                b[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            if (a[10] == b[10])
+            {
+                System.Console.WriteLine("Os arrays são iguais.");
+            }
+            else
+            {
+                System.Console.WriteLine("Os arrays são diferentes.");
+            }
+
         }
 
          static void Exercise1(string[] args)
@@ -535,6 +556,15 @@ namespace primeira_aula
                 b[i] = Convert.ToInt32(Console.ReadLine());
             }
 
+            if (a[10] == b[10])
+            {
+                System.Console.WriteLine("Os arrays são iguais.");
+            }
+            else
+            {
+                System.Console.WriteLine("Os arrays são diferentes.");
+            }
+
         }
 
         static void Array5(string[] args)
@@ -583,15 +613,11 @@ namespace primeira_aula
         }
 
         static void Array6(string[] args)
-        {
-            // 6-Leia um array A com 12 elementos. Após sua leitura, colocar os seus elementos em
-            // ordem crescente. Depois ler um array B também com doze elementos, colocar os
-            // elementos de B em ordem decrescente. Construir um array C, onde cada elemento de C é a
-            // soma do elemento correspondente de A com b. Colocar em ordem crescente a matriz
-            // C e apresentar os seus valores.
-
+       {
+            // teste executado
             int[] a = new int[12];
             int[] b = new int[12];
+            int[] c = new int[12];
             var i = 0;
 
             for (i = 0; i < 12; i++)
@@ -600,6 +626,39 @@ namespace primeira_aula
                 a[i] = Convert.ToInt32(Console.ReadLine());
             }
 
+            System.Console.WriteLine("Ordem crescente de A:");
+            var temp = a.ToList().OrderBy(x => x);
+            foreach (var elemento in temp)
+            {
+                System.Console.WriteLine($"{elemento}");
+            }
+
+            for (i = 0; i < 12; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                b[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            System.Console.WriteLine("Ordem decrescente de B:");
+            temp = b.ToList().OrderByDescending(x => x);
+            foreach (var elemento in temp)
+            {
+                System.Console.WriteLine($"{elemento}");
+            }
+            
+            for (i = 0; i < 12; i++)
+            {
+                c[i] = a[i] + b[i];
+            }
+
+            System.Console.WriteLine("Ordem crescente de C:");
+            temp = c.ToList().OrderBy(x => x);
+            foreach (var elemento in temp)
+            {
+                System.Console.WriteLine($"{elemento}");
+            }
+
         }
-    }
+    } 
+
 }
