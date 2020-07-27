@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace primeira_aula
 {
@@ -6,6 +7,30 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
+            // 6-Leia um array A com 12 elementos. Após sua leitura, colocar os seus elementos em
+            // ordem crescente. Depois ler um array B também com doze elementos, colocar os
+            // elementos de B em ordem decrescente. Construir um array C, onde cada elemento de C é a
+            // soma do elemento correspondente de A com b. Colocar em ordem crescente a matriz
+            // C e apresentar os seus valores.
+
+            int[] a = new int[12];
+            int[] b = new int[12];
+            var i = 0;
+
+            System.Console.WriteLine("Ordem crescente do array A:");
+            for (i = 0; i < 12; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Array.Sort(a);
+
+            for (i = 0; i < 12; i++)
+            {
+                Console.WriteLine(a[i]); 
+            }
+
         }
 
          static void Exercise1(string[] args)
@@ -14,7 +39,7 @@ namespace primeira_aula
             int i;
             
             System.Console.WriteLine("Ordem crescente:");
-            for (i = 1; i < 11; i++)
+            for (i = 0; i < 10; i++)
             {
                 System.Console.WriteLine($"{i}");
             }
@@ -451,6 +476,137 @@ namespace primeira_aula
 
             total = apple + price;
             System.Console.WriteLine($"O valor total da compra será de: R${total.ToString("0.00")}");
+        }
+
+        static void Array1(string[] args)
+        {
+            // teste executado
+            int[] a = new int[15];
+            int[] b = new int[15];
+            int[] c = new int[15];
+            int i = 0;
+
+            for (i = 0; i < 15; i++)
+            {
+                System.Console.WriteLine("Informe um valor para A:");
+                a[i] = Convert.ToInt32(System.Console.ReadLine());
+                System.Console.WriteLine("Informe um valor para B:");
+                b[i] = Convert.ToInt32(System.Console.ReadLine());
+                c[i] = a[i] - b[i];
+                System.Console.WriteLine($"Valor de C: {c[i]}");
+            }
+        }
+
+        static void Array2(string[] args)
+        {
+            // teste executado
+            int[] num = new int[10];
+            var i = 0;
+
+            for (i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                num[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            System.Console.WriteLine("Lista decrescente dos inteiros:");
+
+            for (i = 9; i >= 0; i--)
+            {
+                System.Console.WriteLine($"{num[i]}");
+            }
+        }
+
+        static void Array3(string[] args)
+        {
+            // teste executado
+            int[] a = new int[10];
+            var i = 0;
+
+            for (i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            System.Console.WriteLine("Informe um número inteiro a ser pesquisado:");
+            var num = Convert.ToInt32(Console.ReadLine());
+
+            if (a.Contains(num))
+            {
+                System.Console.WriteLine("O número existe no array.");
+            }
+            else
+            {
+                System.Console.WriteLine("Número inexistente.");
+            }
+
+        }
+
+        static void Array4(string[] args)
+        {
+            // pesquisar comparação
+            int[] a = new int[10];
+            int[] b = new int[10];
+            var i = 0;
+
+            for (i = 0; i < 10; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+                System.Console.WriteLine("Informe um número inteiro:");
+                b[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+        }
+
+        static void Array5(string[] args)
+        {
+            // teste executado
+            int[] a = new int [15];
+            var soma = 0;
+            var i = 0;
+            var media = 0;
+            var counter = 0;
+            var counter2 = 0;
+            var counter3 = 0;
+            var counter4 = 0;
+
+            for (i = 0; i < 15; i++)
+            {
+                System.Console.WriteLine("Informe um número inteiro:");
+                a[i] = Convert.ToInt32(Console.ReadLine());
+                soma = soma + a[i];
+                counter++;
+            }
+
+            media = soma / counter;
+
+            for (i = 0; i < 15; i++)
+            {
+                if (a[i] > media)
+                {
+                    counter2++;
+                }
+                else if (a[i] == media)
+                {
+                    counter3++;
+                }
+                else
+                {
+                    counter4++;
+                }
+            }
+
+           System.Console.WriteLine($"A média final é {counter2}.");
+           System.Console.WriteLine($"{counter2} estão acima da média.");
+           System.Console.WriteLine($"{counter3} estão na média.");
+           System.Console.WriteLine($"{counter4} estão abaixo da média.");
+
+        }
+
+        static void Array6(string[] args)
+        {
         }
     }
 }

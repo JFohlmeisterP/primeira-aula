@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/fohlmeister/primeira-aula/primeira-aula.csproj": {}
+    "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj": {}
   },
   "projects": {
-    "/home/fohlmeister/primeira-aula/primeira-aula.csproj": {
+    "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fohlmeister/primeira-aula/primeira-aula.csproj",
+        "projectUniqueName": "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj",
         "projectName": "primeira-aula",
-        "projectPath": "/home/fohlmeister/primeira-aula/primeira-aula.csproj",
+        "projectPath": "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj",
         "packagesPath": "/home/fohlmeister/.nuget/packages/",
-        "outputPath": "/home/fohlmeister/primeira-aula/obj/",
+        "outputPath": "/home/fohlmeister/Sistemas/primeira-aula/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fohlmeister/.nuget/NuGet/NuGet.Config"

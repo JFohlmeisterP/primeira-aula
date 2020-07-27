@@ -33,3 +33,16 @@ C:/fohlmeister/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.pdb
 /home/fohlmeister/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.dll
 /home/fohlmeister/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.pdb
 /home/fohlmeister/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.genruntimeconfig.cache
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula.deps.json
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula.runtimeconfig.json
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula.runtimeconfig.dev.json
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula.dll
+/home/fohlmeister/Sistemas/primeira-aula/bin/Debug/netcoreapp3.1/primeira-aula.pdb
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.csprojAssemblyReference.cache
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.AssemblyInfoInputs.cache
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.AssemblyInfo.cs
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.csproj.CoreCompileInputs.cache
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.dll
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.pdb
+/home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.genruntimeconfig.cache
