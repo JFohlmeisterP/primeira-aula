@@ -7,88 +7,85 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            // pesquisar comparação
-            int[] a = new int[10];
-            int[] b = new int[10];
-            var i = 0;
-
-            for (i = 0; i < 10; i++)
-            {
-                System.Console.WriteLine("Informe um número inteiro para A:");
-                a[i] = Convert.ToInt32(Console.ReadLine());
-                System.Console.WriteLine("Informe um número inteiro para B:");
-                b[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            if (a[10] == b[10])
-            {
-                System.Console.WriteLine("Os arrays são iguais.");
-            }
-            else
-            {
-                System.Console.WriteLine("Os arrays são diferentes.");
-            }
-
+            Exercise3();
         }
 
-         static void Exercise1(string[] args)
+         static void Exercise1()
         {
             // teste executado
-            int i;
-            
-            System.Console.WriteLine("Ordem crescente:");
-            for (i = 0; i < 10; i++)
+            int counter = 1;
+            int decrement = 10;
+            int counter2 = 1;
+
+            Console.WriteLine("Ordem Crescente:");
+
+            while (counter < 11)
             {
-                System.Console.WriteLine($"{i}");
+                Console.WriteLine(counter);
+                counter++;
             }
 
-            System.Console.WriteLine("Ordem decrescente:");
-            for (i = 10; i >= 1; i--)
+            Console.WriteLine("Ordem Decrescente:");
+
+            while (decrement > 0)
             {
-                System.Console.WriteLine($"{i}");
+                Console.WriteLine(decrement);
+                decrement--;
             }
 
-            System.Console.WriteLine("Ordem crescente de pares:");
-            for (i = 1; i < 11; i++)
+            Console.WriteLine("Ordem Crescente de Pares:");
+
+            while (counter2 < 11)
             {
-                if (i % 2 == 0)
-                System.Console.WriteLine($"{i}");
-            }
-        }
-
-         static void Exercise2(string[] args)
-        {
-            // teste executado
-            int soma = 0;
-            int i = 0;
-
-            for (i = 0; i <= 100; i++)
-            {
-                soma = soma + i;
-            }
-
-            System.Console.WriteLine($"A soma de todos os inteiros de 1 a 100 é: {soma}");
-        }
-
-         static void Exercise3(string[] args)
-        {
-           // teste executado
-           int i = 0;
-
-            for (i = 0; i <= 200; i++) 
-            {
-                if (i % 2 == 1)
+                if (counter2 % 2 == 0)
                 {
-                    System.Console.WriteLine($"{i}");
+                    Console.WriteLine(counter2);
                 }
+                counter2++;
             }
         }
-        static void Exercise4(string[] args)
+
+         static void Exercise2()
+        {
+            // teste executado
+            int counter = 1;
+            var soma = 0;
+
+            Console.WriteLine("Lista");
+
+            while (counter < 101)
+            {
+                soma += counter;
+                counter++;
+            }
+
+            Console.WriteLine("Soma dos inteiros de 1 a 100:");
+            Console.WriteLine(soma);
+        }
+
+         static void Exercise3()
+        {
+            // teste executado
+            int counter = 0;
+
+            Console.WriteLine("Ímpares menores que 200:");
+
+            while (counter < 200)
+            {
+                if (counter % 2 == 1)
+                {
+                    Console.WriteLine(counter);
+                }
+                counter++;
+            }
+        }
+        static void Exercise4()
         {
             // teste executado
             double sum = 0.0;
             double counter = 0.0;
         
+            // roda infinitamente
             while (true)
             {
                 System.Console.WriteLine("Digite a idade:");
@@ -106,9 +103,9 @@ namespace primeira_aula
 
             System.Console.WriteLine("A média da turma é:");
             System.Console.WriteLine(String.Format("{0:0.00}", sum / counter));
-
+            
         }
-        static void Exercise5(string[] args)
+        static void Exercise5()
         {
             // teste executado
             string[] name = new string[5];
@@ -135,7 +132,7 @@ namespace primeira_aula
 
         }
 
-        static void Exercise6(string[] args)
+        static void Exercise6()
         {
             // teste executado
             string[] nomes = new string[2];
@@ -183,7 +180,7 @@ namespace primeira_aula
 
         }
     
-        static void Exercise7(string[] args)
+        static void Exercise7()
         {
             // teste executado
             double valorUn;
@@ -207,7 +204,7 @@ namespace primeira_aula
             System.Console.WriteLine($"O gasto total do fumante até agora foi de R${gasto.ToString("0.00")}");
         }
 
-         static void Exercise8(string[] args)
+         static void Exercise8()
         {
             // teste executado
             System.Console.WriteLine("Informe o valor de X:");
@@ -229,7 +226,7 @@ namespace primeira_aula
         }
 
         
-         static void Exercise9(string[] args)
+         static void Exercise9()
         {
             // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
@@ -249,7 +246,7 @@ namespace primeira_aula
             }
         }
 
-            static void Exercise10(string[] args)
+            static void Exercise10()
         {
             // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
@@ -271,7 +268,7 @@ namespace primeira_aula
             }
         }
 
-        static void Exercise11(string[] args)
+        static void Exercise11()
         {
             // teste executado
             int quociente = 0;
@@ -292,7 +289,7 @@ namespace primeira_aula
             }
         }
 
-        static void Exercise12(string[] args)
+        static void Exercise12()
         {
             // teste executado
             int[] num = new int[4];
@@ -314,7 +311,7 @@ namespace primeira_aula
         }
 
 
-        static void Exercise13(string[] args)
+        static void Exercise13()
         {
             // teste executado
             int maior = 0;
@@ -336,7 +333,7 @@ namespace primeira_aula
 
         }
 
-        static void Exercise14(string[] args)
+        static void Exercise14()
         {
             // teste executado
             int[] num = new int[3];
@@ -386,7 +383,7 @@ namespace primeira_aula
 
         }
 
-        static void Exercise15(string[] args)
+        static void Exercise15()
         {
             // teste executado
             int i;
@@ -414,7 +411,7 @@ namespace primeira_aula
 
         }
 
-         static void Exercise16(string[] args)
+         static void Exercise16()
             {
                 // teste executado
                 double salarioliquido = 0;
@@ -438,7 +435,7 @@ namespace primeira_aula
                 System.Console.WriteLine($"O salário líquido será de: {salarioliquido}");
             }
 
-        static void Exercise17(string[] args)
+        static void Exercise17()
         {
             // teste executado
             int i;
@@ -454,7 +451,7 @@ namespace primeira_aula
             }
         }
 
-        static void Exercise18(string[] args)
+        static void Exercise18()
         {
             // teste executado
             double price = 0;
@@ -476,7 +473,7 @@ namespace primeira_aula
             System.Console.WriteLine($"O valor total da compra será de: R${total.ToString("0.00")}");
         }
 
-        static void Array1(string[] args)
+        static void Array1()
         {
             // teste executado
             int[] a = new int[15];
@@ -495,7 +492,7 @@ namespace primeira_aula
             }
         }
 
-        static void Array2(string[] args)
+        static void Array2()
         {
             // teste executado
             int[] num = new int[10];
@@ -515,7 +512,7 @@ namespace primeira_aula
             }
         }
 
-        static void Array3(string[] args)
+        static void Array3()
         {
             // teste executado
             int[] a = new int[10];
@@ -541,7 +538,7 @@ namespace primeira_aula
 
         }
 
-        static void Array4(string[] args)
+        static void Array4()
         {
             // pesquisar comparação
             int[] a = new int[10];
@@ -567,7 +564,7 @@ namespace primeira_aula
 
         }
 
-        static void Array5(string[] args)
+        static void Array5()
         {
             // teste executado
             int[] a = new int [15];
@@ -612,7 +609,7 @@ namespace primeira_aula
 
         }
 
-        static void Array6(string[] args)
+        static void Array6()
        {
             // teste executado
             int[] a = new int[12];
