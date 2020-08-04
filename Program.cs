@@ -7,7 +7,7 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            Exercise6();
+            Exercise14();
         }
 
          static void Exercise1()
@@ -337,7 +337,7 @@ namespace primeira_aula
         {
             // teste executado
             int[] num = new int[3];
-
+            
             System.Console.WriteLine("Informe o primeiro número:");
             num[0] = Convert.ToInt32(System.Console.ReadLine());
             System.Console.WriteLine("Informe o segundo número:");
@@ -437,23 +437,31 @@ namespace primeira_aula
 
         static void Exercise17()
         {
-            // teste executado
+            // teste ok
             int i;
             int result;
 
-            System.Console.WriteLine("Informe um número:");
-            var num = Convert.ToInt32(System.Console.ReadLine());
-
-            for (i = 1; i < 11; i++)
+            while (true)
             {
-                result = num * i;
-                System.Console.WriteLine($"{num} * {i} = {result}");
+                System.Console.WriteLine("Informe um número:");
+                var num = Convert.ToInt32(System.Console.ReadLine());
+
+                if(num == -1)
+                {
+                    break;
+                }
+
+                for (i = 1; i < 11; i++)
+                {
+                    result = num * i;
+                    System.Console.WriteLine($"{num} * {i} = {result}");
+                }
             }
         }
 
         static void Exercise18()
         {
-            // teste executado
+            // teste ok
             double price = 0;
             double total = 0;
             

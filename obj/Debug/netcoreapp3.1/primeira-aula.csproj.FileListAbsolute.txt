@@ -46,3 +46,16 @@ C:/fohlmeister/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.pdb
 /home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.dll
 /home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.pdb
 /home/fohlmeister/Sistemas/primeira-aula/obj/Debug/netcoreapp3.1/primeira-aula.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.exe
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.deps.json
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.runtimeconfig.json
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.runtimeconfig.dev.json
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.dll
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\bin\Debug\netcoreapp3.1\primeira-aula.pdb
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.csprojAssemblyReference.cache
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.dll
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.pdb
+C:\Users\julia\OneDrive\Documentos\Sistemas\primeira-aula\obj\Debug\netcoreapp3.1\primeira-aula.genruntimeconfig.cache

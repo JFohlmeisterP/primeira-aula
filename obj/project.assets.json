@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/home/fohlmeister/.nuget/packages/": {}
+    "C:\\Users\\julia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj",
+      "projectUniqueName": "C:\\Users\\julia\\OneDrive\\Documentos\\Sistemas\\primeira-aula\\primeira-aula.csproj",
       "projectName": "primeira-aula",
-      "projectPath": "/home/fohlmeister/Sistemas/primeira-aula/primeira-aula.csproj",
-      "packagesPath": "/home/fohlmeister/.nuget/packages/",
-      "outputPath": "/home/fohlmeister/Sistemas/primeira-aula/obj/",
+      "projectPath": "C:\\Users\\julia\\OneDrive\\Documentos\\Sistemas\\primeira-aula\\primeira-aula.csproj",
+      "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julia\\OneDrive\\Documentos\\Sistemas\\primeira-aula\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/fohlmeister/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
