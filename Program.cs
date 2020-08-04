@@ -135,50 +135,114 @@ namespace primeira_aula
         static void Exercise6()
         {
             // teste executado
-            string[] nomes = new string[2];
-            int counter1 = 0;
-            int counter2 = 0;
-            int i;
+            // string[] nomes = new string[2];
+            // int counter1 = 0;
+            // int counter2 = 0;
+            // int i;
 
-            System.Console.WriteLine("Informe a senha para cadastrar os candidatos:");
-             var senha = System.Console.ReadLine();
+            // System.Console.WriteLine("Informe a senha para cadastrar os candidatos:");
+            //  var senha = System.Console.ReadLine();
 
-            if (senha == "Pa$$w0rd")
-            {
-                for (i = 0; i < 2; i++)
+            // if (senha == "Pa$$w0rd")
+            // {
+            //     for (i = 0; i < 2; i++)
+            //     {
+            //         System.Console.WriteLine("Informe o nome do candidato:");
+            //         nomes[i] = System.Console.ReadLine();
+            //     }
+            // }
+
+            // System.Console.WriteLine("Para votar, informe o número do candidato:");
+            // System.Console.WriteLine($"[1]{nomes[0]}  [2]{nomes[1]}");
+            // var voto = System.Console.ReadLine();
+
+            // if (voto == "1")
+            // {
+            //     counter1++;
+            // }
+            // else if (voto == "2")
+            // {
+            //     counter2++;
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Número inválido");
+            // }
+
+            // if (counter1 > counter2)
+            // {
+            //     System.Console.WriteLine($"O candidato líder de votos é {nomes[0]}");
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine($"O candidato líder de votos é {nomes[1]}");
+            // }
+
+			const string registerMode = "1";
+			const string votesMode = "2";
+			const string resultMode = "3";
+
+			// tupla
+            var candidates = new (string name, int votes)[2];
+			
+			while (true)
+			{
+				System.Console.WriteLine("Selecione um dos modos a baixo:");
+				System.Console.WriteLine($"{registerMode}) Cadastro de candidatos");
+				System.Console.WriteLine($"{votesMode}) Votar");
+				System.Console.WriteLine($"{resultMode}) Apuração dos votos");
+				var mode = Console.ReadLine();
+
+				if (mode == resultMode)
+				{
+					break;
+				}
+
+				if (mode == registerMode)
+				{
+					var password = "";
+					while (password != "Pa$$w0rd")
+					{
+						System.Console.WriteLine("Digite a senha");
+						password = Console.ReadLine();
+					}
+
+                    for (int i = 0; i < candidates.Length; i++)
+                    {                   
+                        System.Console.WriteLine($"Digite o nome do candidato nº{i + 1}");
+                        candidates[i].name = Console.ReadLine();
+                    }
+				}
+
+				if (mode == votesMode)
+				{
+					System.Console.WriteLine($"Vote 1 para o candidato: {candidates[0].name} ou 2 para o candidato: {candidates[1].name}");
+					
+					var vote = Int32.Parse(Console.ReadLine());
+					candidates[vote - 1].votes++;
+				}
+			}
+
+			if (candidates[0].votes == candidates[1].votes)
+			{
+				System.Console.WriteLine("Segundo turno!");
+			}
+			else
+			{
+				var winner = candidates[0];
+                for (int i = 1; i < candidates.Length; i++)
                 {
-                    System.Console.WriteLine("Informe o nome do candidato:");
-                    nomes[i] = System.Console.ReadLine();
+                    var currentCandidate = candidates[i];
+                    if (currentCandidate.votes > winner.votes)
+                    {
+                        winner = currentCandidate;
+                    }
                 }
-            }
 
-            System.Console.WriteLine("Para votar, informe o número do candidato:");
-            System.Console.WriteLine($"[1]{nomes[0]}  [2]{nomes[1]}");
-            var voto = System.Console.ReadLine();
-
-            if (voto == "1")
-            {
-                counter1++;
-            }
-            else if (voto == "2")
-            {
-                counter2++;
-            }
-            else
-            {
-                System.Console.WriteLine("Número inválido");
-            }
-
-            if (counter1 > counter2)
-            {
-                System.Console.WriteLine($"O candidato líder de votos é {nomes[0]}");
-            }
-            else
-            {
-                System.Console.WriteLine($"O candidato líder de votos é {nomes[1]}");
-            }
-
-        }
+				System.Console.WriteLine($"O vencedor é: {winner.name}");
+				System.Console.WriteLine($"Com o total de: {winner.votes} votos!");
+			}
+		}
     
         static void Exercise7()
         {
