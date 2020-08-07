@@ -7,7 +7,7 @@ namespace primeira_aula
     {
         static void Main(string[] args)
         {
-            Exercise14();
+            Exercise6();
         }
 
          static void Exercise1()
@@ -187,8 +187,8 @@ namespace primeira_aula
 			
 			while (true)
 			{
-				System.Console.WriteLine("Selecione um dos modos a baixo:");
-				System.Console.WriteLine($"{registerMode}) Cadastro de candidatos");
+				System.Console.WriteLine("Selecione um dos modos:");
+				System.Console.WriteLine($"{registerMode}) Cadastrar candidatos");
 				System.Console.WriteLine($"{votesMode}) Votar");
 				System.Console.WriteLine($"{resultMode}) Apuração dos votos");
 				var mode = Console.ReadLine();
@@ -203,20 +203,21 @@ namespace primeira_aula
 					var password = "";
 					while (password != "Pa$$w0rd")
 					{
-						System.Console.WriteLine("Digite a senha");
+						System.Console.WriteLine("Digite a senha:");
 						password = Console.ReadLine();
 					}
 
                     for (int i = 0; i < candidates.Length; i++)
                     {                   
-                        System.Console.WriteLine($"Digite o nome do candidato nº{i + 1}");
+                        System.Console.WriteLine($"Digite o nome do candidato nº{i + 1}:");
                         candidates[i].name = Console.ReadLine();
                     }
 				}
 
 				if (mode == votesMode)
 				{
-					System.Console.WriteLine($"Vote 1 para o candidato: {candidates[0].name} ou 2 para o candidato: {candidates[1].name}");
+					System.Console.WriteLine($"Vote [1] para o candidato: {candidates[0].name}");
+                    Console.WriteLine($"Vote [2] para o candidato: {candidates[1].name}");
 					
 					var vote = Int32.Parse(Console.ReadLine());
 					candidates[vote - 1].votes++;
@@ -225,7 +226,7 @@ namespace primeira_aula
 
 			if (candidates[0].votes == candidates[1].votes)
 			{
-				System.Console.WriteLine("Segundo turno!");
+				System.Console.WriteLine("Segundo turno.");
 			}
 			else
 			{
@@ -239,8 +240,8 @@ namespace primeira_aula
                     }
                 }
 
-				System.Console.WriteLine($"O vencedor é: {winner.name}");
-				System.Console.WriteLine($"Com o total de: {winner.votes} votos!");
+				System.Console.WriteLine($"O candidato eleito é: {winner.name}.");
+				System.Console.WriteLine($"Com o total de: {winner.votes} votos.");
 			}
 		}
     
