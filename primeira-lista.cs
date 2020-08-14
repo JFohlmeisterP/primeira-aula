@@ -269,7 +269,7 @@ namespace primeira_aula
             System.Console.WriteLine($"O gasto total do fumante até agora foi de R${gasto.ToString("0.00")}");
         }
 
-         static void Exercise8()
+        static void Exercise8()
         {
             // teste executado
             System.Console.WriteLine("Informe o valor de X:");
@@ -291,7 +291,7 @@ namespace primeira_aula
         }
 
         
-         static void Exercise9()
+        static void Exercise9()
         {
             // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
@@ -311,7 +311,7 @@ namespace primeira_aula
             }
         }
 
-            static void Exercise10()
+        static void Exercise10()
         {
             // teste executado
             System.Console.WriteLine("Informe o primeiro número:");
@@ -484,17 +484,17 @@ namespace primeira_aula
                 System.Console.WriteLine("Informe o salário bruto:");
                 var salario = Convert.ToDouble(System.Console.ReadLine());
 
-                if (salario > 600 && salario <= 1000)
+                if (salario > 600 && salario <= 1200)
                 {
-                    salarioliquido = salario - (salario * 0.2);
+                    salarioliquido = salario - (salario * 0.8);
                 }
                 else if (salario > 1200 && salario <= 2000)
                 {
-                    salarioliquido = salario - (salario * 0.25);
+                    salarioliquido = salario - (salario * 0.75);
                 }
-                else if (salario > 2000)
+                else
                 {
-                    salarioliquido = salario - (salario * 0.3);
+                    salarioliquido = salario - (salario * 0.7);
                 }
                 
                 System.Console.WriteLine($"O salário líquido será de: {salarioliquido}");
