@@ -486,15 +486,15 @@ namespace primeira_aula
 
                 if (salario > 600 && salario <= 1200)
                 {
-                    salarioliquido = salario - (salario * 0.8);
+                    salarioliquido = salario - (salario * 0.2);
                 }
                 else if (salario > 1200 && salario <= 2000)
                 {
-                    salarioliquido = salario - (salario * 0.75);
+                    salarioliquido = salario - (salario * 0.25);
                 }
                 else
                 {
-                    salarioliquido = salario - (salario * 0.7);
+                    salarioliquido = salario - (salario * 0.3);
                 }
                 
                 System.Console.WriteLine($"O salário líquido será de: {salarioliquido}");
